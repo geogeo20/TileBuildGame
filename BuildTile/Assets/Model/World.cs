@@ -8,11 +8,15 @@ public class World
     int width;
     int height;
 
+    public int Width { get => width; set => width = value; }
+    public int Height { get => height; set => height = value; }
+
+
 
     public World(int width = 100, int height = 100)
     {
-        this.width = width;
-        this.height = height;
+        this.Width = width;
+        this.Height = height;
 
         tiles = new Tile[width, height];
 
@@ -24,13 +28,31 @@ public class World
             }
         }
 
+        Debug.Log("Word created with" + (width * height) + " tiles");
+
     }
+
+    public void RandomizeTiles()
+    {
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                if (Random.Range(0, 2) == 0)
+                    tiles[x, y].Type = Tile.TileType.Empty;
+                else
+                    tiles[x, y].Type = Tile.TileType.Floor;
+            }
+        }
+    }
+    
 
     public Tile GetTileAt(int x, int y)
     {
-        if (x > width || x < 0 || y > height || y < 0)
+        if (x > Width || x < 0 || y > Height || y < 0)
         {
             Debug.LogError("Tile ( " + x + " " + y + " ) is out of bounds");
+            return null;
         }
 
 

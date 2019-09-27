@@ -7,6 +7,9 @@ public class Tile
     public enum TileType { Empty, Floor };
 
     TileType type = TileType.Empty;
+    public TileType Type { get => type; set => type = value; }
+
+
 
     LooseObject looseObject;
     InstalledObject installedObject;
@@ -14,6 +17,8 @@ public class Tile
     World world;
     int x;
     int y;
+
+    
 
     public Tile(World world, int x, int y)
     {
