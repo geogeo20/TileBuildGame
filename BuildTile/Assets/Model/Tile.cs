@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Tile
 {
+    
+
     public enum TileType { Empty, Floor };
 
     TileType type = TileType.Empty;
@@ -17,7 +19,8 @@ public class Tile
     World world;
     int x;
     int y;
-
+    public int X => x;
+    public int Y => y;
     
 
     public Tile(World world, int x, int y)

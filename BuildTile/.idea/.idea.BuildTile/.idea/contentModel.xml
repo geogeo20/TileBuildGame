@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Grigorie\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Grigorie\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_BuildTile.453432830.00" t="ExcludeRecursive" />
+    <e p="E:\Unity\TileBuildGame\BuildTile" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Controllers" t="Include">
+          <e p="WorldController.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="InstalledObject.cs" t="Include" />
+          <e p="LooseObject.cs" t="Include" />
+          <e p="Tile.cs" t="Include" />
+          <e p="World.cs" t="Include" />
+        </e>
+      </e>
+      <e p="BuildTile.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
